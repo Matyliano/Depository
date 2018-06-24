@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping
 @CrossOrigin()
-public class DepositoryController {
+public class DepositoryListController {
 
 }
