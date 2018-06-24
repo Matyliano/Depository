@@ -21,7 +21,7 @@ public class DepositoryModelController {
         return depositoryRepository.findAll();
     }
 
-    @PostMapping(name = "dostawa")
+    @PostMapping(path = "/dostawa")
     @ResponseStatus(HttpStatus.CREATED)
     public DepositoryModel create(@RequestBody DepositoryModel depositoryModel) {
         return depositoryRepository.save(depositoryModel);
