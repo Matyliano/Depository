@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data   // nie trzeba tworzyć getterów, setterów i tych wszystkich dupereli
@@ -13,8 +14,8 @@ import java.util.List;
 @AllArgsConstructor
 public class DepositoryList {
 
-    @OneToMany(mappedBy = "DepositoryModel")
-    List<DepositoryModel> depositoryList;
+    @OneToMany
+    List<DepositoryModel> modelList;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

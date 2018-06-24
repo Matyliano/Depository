@@ -1,8 +1,6 @@
 package pl.sda.scrum.magazyn.magazyn.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +13,8 @@ import javax.validation.constraints.NotNull;
 @Data   // nie trzeba tworzyć getterów, setterów i tych wszystkich dupereli
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class DepositoryModel {
 
     @Id
